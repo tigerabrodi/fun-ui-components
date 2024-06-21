@@ -5,6 +5,7 @@ export const Buttons = () => {
     <div className="flex items-center gap-4">
       <button className="move-up-button">Move up</button>
       <button className="move-side-button">Move side</button>
+      <button className="underline-button">Underline</button>
     </div>
   );
 };
