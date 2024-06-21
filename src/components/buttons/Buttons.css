@@ -1,0 +1,59 @@
+.move-up-button {
+  position: relative;
+  padding: 8px 12px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.move-up-button::before {
+  content: "";
+  background-color: rgb(36, 173, 173);
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: bottom center;
+  transform: scaleY(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.move-up-button:hover::before {
+  transform: scaleY(1);
+}
+
+.move-side-button {
+  position: relative;
+  padding: 8px 12px;
+  color: black;
+  border: 2px solid black;
+  border-radius: 8px;
+  font-size: 18px;
+  font-weight: 600;
+  overflow: hidden;
+  z-index: 1;
+}
+
+.move-side-button::before {
+  content: "";
+  background-color: rgb(36, 173, 173);
+  width: 110%;
+  height: 100%;
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  z-index: -1;
+  transform-origin: left;
+  transform: scaleX(0);
+  transition: transform 0.3s ease-in-out;
+}
+
+.move-side-button:hover::before {
+  transform: scaleX(1);
+}
